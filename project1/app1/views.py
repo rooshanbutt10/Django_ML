@@ -20,5 +20,6 @@ def contactus_fun(request):
 
         myinstance=Person(userinputvalue=mynum,usercalvalue=result)
         myinstance.save()
+        print ("Data Entered")
    
     return render(request,"contactus.html",{'result':result})
